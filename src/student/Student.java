@@ -1,9 +1,14 @@
 package student;
 
+import course.Course;
+import computer.Computer;
+
 public class Student {
 
     private String firstName, lastName;
     private int yearOfBirth;
+    private Course course;
+    private Computer computer;
 
     public void setFirstName(String newFirstName) {
         this.firstName = newFirstName;
@@ -27,6 +32,14 @@ public class Student {
 
     public int getYearOfBirth() {
         return yearOfBirth;
+    }
+
+    public Course getCourse() {
+        return this.course;
+    }
+
+    public Computer getComputer() {
+        return this.computer;
     }
 
     public Student() {
