@@ -50,6 +50,8 @@ public class Student {
         this.firstName = newFirstName;
         this.lastName = newLastName;
         this.yearOfBirth = newYearOfBirth;
+        this.course = new Course();
+        this.computer = new Computer();
     }
 
     public void studentInfo() {
